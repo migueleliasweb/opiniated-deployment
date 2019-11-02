@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+
+  operator-framework:
+    entrypoint: [ "operator-framework" ]
+    volumes:
+    - ".:/opt/opiniated-deployment"
+    build:
+      context: .
+      dockerfile: operator-framework.Dockerfile
